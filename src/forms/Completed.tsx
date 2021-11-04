@@ -9,7 +9,7 @@ export default function Completed(props: any) {
     const state = useSelector((state: RootState) => state);
 
     const formData = JSON.stringify(state);
-    console.log(formData);
+    console.log(state);
     
     return (
         <div className="container">
@@ -18,9 +18,6 @@ export default function Completed(props: any) {
                 <h3>Registration Completed</h3>
                 <Link to={"/"}>Back to Home page</Link>
             </div>
-        {/* <pre>{JSON.stringify(state, null, 2)}</pre>
-
-        <Link to={"/"}>Start Over</Link> */}
       </div>
     );
 }
